@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+apply from: "$rootProject.projectDir/scripts/dependencies.gradle"
+apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
+apply from: "$rootProject.projectDir/scripts/sources.gradle"
+
+dependencies {
+    implementation project(':domain')
+    implementation libraries.fragment
+    implementation libraries.navigation
+    implementation libraries.material
+    implementation libraries.gson
+    implementation libraries.dagger
+    kapt annotationProcessors.daggerCompiler
+    implementation libraries.glide
+
+}

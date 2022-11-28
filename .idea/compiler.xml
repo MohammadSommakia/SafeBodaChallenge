@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="Enhanced_MATT.app" target="11" />
+      <module name="Enhanced_MATT.core.apollo_client" target="11" />
+      <module name="Enhanced_MATT.core.bluetooth_socket" target="11" />
+      <module name="Enhanced_MATT.core.web_socket" target="11" />
+      <module name="Enhanced_MATT.data" target="11" />
+      <module name="Enhanced_MATT.features.camera" target="11" />
+      <module name="Enhanced_MATT.features.check_update" target="11" />
+      <module name="Enhanced_MATT.features.login" target="11" />
+      <module name="Enhanced_MATT.features.splash" target="11" />
+      <module name="SafeBoda_Challenge.core.apollo_client" target="11" />
+      <module name="SafeBoda_Challenge.core.bluetooth_socket" target="11" />
+      <module name="SafeBoda_Challenge.core.web_socket" target="11" />
+      <module name="SafeBoda_Challenge.features.camera" target="11" />
+      <module name="SafeBoda_Challenge.features.check_update" target="11" />
+      <module name="SafeBoda_Challenge.features.login" target="11" />
+      <module name="SafeBoda_Challenge.features.splash" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

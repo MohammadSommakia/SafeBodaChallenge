@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
+apply from: "$rootProject.projectDir/scripts/dependencies.gradle"
+apply from: "$rootProject.projectDir/scripts/sources.gradle"
+
+
+android {
+    namespace 'com.safeboda.test'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.safeboda.test"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    dependencies {
+
+        implementation libraries.navigation
+        androidTestImplementation testLibraries.espresso
+
+        implementation libraries.retrofit
+        implementation libraries.gson
+        implementation libraries.okHttp
+        implementation libraries.workManager
+        implementation libraries.dagger
+        kapt annotationProcessors.daggerCompiler
+        implementation project(':core')
+        implementation project(':data')
+        implementation project(':domain')
+        implementation project(':features:users')
+    }
+}
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="reason_generic">Something went wrong</string>
+    <string name="reason_network">Check your internet connection</string>
+    <string name="server_error">Server error</string>
+    <string name="reason_timeout">Server timed out</string>
+    <string name="reason_req_auth">Authentication error</string>
+    <string name="forbidden_error">Forbidden!</string>
+</resources>
